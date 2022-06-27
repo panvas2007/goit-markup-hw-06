@@ -695,21 +695,47 @@ img {
   margin: 0px;
   margin: 40px 0px 30px 40px;
 }
+/* -------textarea----- */
+.modal-form {
+  display: block;
+}
+.modal-comment {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal-info {
+  resize: none;
+  width: 100%;
+  outline: transparent;
+  margin-top: 4px;
+  border-radius: 4px;
+}
 
+.modal-textarea {
+  width: 448px;
+  margin-left: 41px;
+  padding: 0px;
+}
 .form-field {
   position: relative;
   margin: auto;
   width: 448px;
   margin-bottom: 28px;
 }
+
+.mail {
+  margin-bottom: 10px;
+}
 .modal-imput {
-  display: block;
+  display: inline-block;
   width: 100%;
   height: 40px;
   padding-left: 45px;
   border-radius: 4px;
   outline: transparent;
-  margin: auto;
 }
 .modal-label {
   position: absolute;
@@ -732,6 +758,59 @@ img {
 }
 .modal-imput:focus {
   border: 1px solid #2196f3;
+}
+/* ----------Checkbox-------- */
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.check-field {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
+.checkbox:checked + .checkbox-icon {
+  background-color: #2196f3;
+  background-image: url(/images/icon\ check1.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: #2196f3;
+}
+.checkbox-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.checkbox-link {
+  color: #2196f3;
+}
+/* ---------------Buttom--------------- */
+.check-btn {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #fff;
+  background-color: #2196f3;
+  padding: 10px 55px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.check-button {
+  display: flex;
+  justify-content: center;
 }
 .hero-btn {
   display: inline-block;

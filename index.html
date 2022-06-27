@@ -103,12 +103,40 @@
                 </svg>
                 <label class="modal-label" for="phone">Телефон</label>
               </div>
-              <div class="form-field">
+              <div class="form-field mail">
                 <input class="modal-imput" type="email" name="mail" id="mail" />
                 <svg class="modal-icon" width="18px" height="18px">
                   <use href="images/symbol-defs2.svg#icon-Vector1"></use>
                 </svg>
                 <label class="modal-label" for="mail">Почта</label>
+              </div>
+              <div class="modal-textarea">
+                <label class="modal-comment" for="comment">Комментарий</label>
+                <textarea
+                  class="modal-info"
+                  name="comment"
+                  id="comment"
+                  rows="10"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+              <label class="check-field">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="topic"
+                  value="choice"
+                />
+                <span class="checkbox-icon"></span>
+                <span class="checkbox-text">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href="#" class="checkbox-link">Условия договора</a>
+                </span>
+              </label>
+              <div class="check-button">
+                <button class="check-btn" type="submit" name="buttom">
+                  Отправить
+                </button>
               </div>
             </form>
           </div>
