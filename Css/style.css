@@ -12,6 +12,7 @@ body {
   color: var(--title-color);
 }
 .container {
+  position: relative;
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
@@ -203,9 +204,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--background-color);
   cursor: pointer;
@@ -218,6 +216,9 @@ body {
   border: 0px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -367,7 +368,6 @@ img {
 .team-links a:focus {
   background-color: #188ce8;
   outline: none;
-  /* transition: all 0.4s; */
 }
 .team-links a svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -524,7 +524,6 @@ img {
   background-color: #188ce8;
   fill: #ffffff;
   outline: 0;
-  /* transition: all 0.4s; */
 }
 
 /* -------portfolio--------- */
@@ -676,6 +675,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
   min-width: 528px;
   min-height: 581px;
   border-radius: 4px;
@@ -693,7 +693,7 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   margin: 0px;
-  margin: 40px 0px 30px 40px;
+  margin-bottom: 30px;
 }
 /* -------textarea----- */
 .modal-form {
@@ -716,14 +716,12 @@ img {
 
 .modal-textarea {
   width: 448px;
-  margin-left: 41px;
   padding: 0px;
 }
 .form-field {
   position: relative;
   margin: auto;
-  width: 448px;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .mail {
@@ -808,15 +806,19 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
+.check-btn:hover,
+.check-btn:focus {
+  color: var(--background-color);
+  background-color: #188ce8;
+}
 .check-button {
   display: flex;
   justify-content: center;
 }
 .hero-btn {
-  display: inline-block;
-  float: right;
-  margin-top: 8px;
-  margin-right: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
   padding: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -834,7 +836,7 @@ img {
 }
 /* --------footer-form------------ */
 .footer-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer-email {
   display: inline-block;
@@ -866,6 +868,8 @@ img {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(47, 48, 58, 1);
   border-radius: 4px;
 }
 .text-btn {
@@ -875,6 +879,11 @@ img {
   margin: 0px;
   padding: 0px;
   color: #fff;
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  color: var(--background-color);
+  background-color: #188ce8;
 }
 .footer-pilot {
   margin-left: 10px;
