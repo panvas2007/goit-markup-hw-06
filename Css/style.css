@@ -791,7 +791,10 @@ img {
   border-color: #2196f3;
 }
 .check-field {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  align-items: center;
+  gap: 7px;
   margin-left: 14px;
   margin-top: 20px;
   margin-bottom: 30px;
